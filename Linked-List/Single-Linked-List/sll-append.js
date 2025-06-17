@@ -31,7 +31,8 @@ class SinglyLinkedList{
 }
 
 let list = new SinglyLinkedList();
-list.append(10);
-list.append(20);
-list.append(30);
-list.printList();
+let array = [10,20,30];
+for (let values of array){
+     list.append(values)
+}
+list.printList()
