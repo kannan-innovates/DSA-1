@@ -49,10 +49,22 @@ class SinglyLinkedList {
           current = current.next;
      }
   }
+  toArray(){
+     let result = [];
+     let current = this.head;
+     while (current!==null){
+          result.push(current.data);
+          current = current.next;
+     }
+     return result;
+          
+  }
 }
 
 let list = new SinglyLinkedList();
 list.append(10);
-list.append(20);
+list.append(25);
 list.insertAtPosition(1,15);
+list.insertAtPosition(2,20)
 list.printList()
+console.log(list.toArray())
