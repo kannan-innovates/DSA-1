@@ -1,38 +1,38 @@
-let arr = [1, 3, 4, 5, 7, 10];
-let target = 10;
-let found = false;
-for(let i = 0; i < arr.length; i++){
-     for(let j =i+1; j < arr.length;  j++){
-          if(arr[i] + arr[j] === target){
-            found = true;
-            break;
-          }
-     }
+// let arr = [1, 3, 4, 5, 7, 10];
+// let target = 10;
+// let found = false;
+// for(let i = 0; i < arr.length; i++){
+//      for(let j =i+1; j < arr.length;  j++){
+//           if(arr[i] + arr[j] === target){
+//             found = true;
+//             break;
+//           }
+//      }
 
-}
-console.log(found)
+// }
+// console.log(found)
 
-let arr = [1, 3, 4, 5, 7, 10];
-let target = 10;
-let left = 0;
-let right = arr.length - 1;
-let found = false;
+// let arr = [1, 3, 4, 5, 7, 10];
+// let target = 10;
+// let left = 0;
+// let right = arr.length - 1;
+// let found = false;
 
-while (left < right) {
-  if (arr[left] + arr[right] === target) {
-    found = true;
-    console.log(`Pairs are ${arr[left]} and ${arr[right]}`);
-    break;
-  } else if (arr[left] + arr[right] < target) {
-    left++;
-  } else {
-    right--;
-  }
-}
+// while (left < right) {
+//   if (arr[left] + arr[right] === target) {
+//     found = true;
+//     console.log(`Pairs are ${arr[left]} and ${arr[right]}`);
+//     break;
+//   } else if (arr[left] + arr[right] < target) {
+//     left++;
+//   } else {
+//     right--;
+//   }
+// }
 
-if (!found) {
-  console.log("No pair found.");
-}
+// if (!found) {
+//   console.log("No pair found.");
+// }
 
 let arr = [1, 3, 4, 5, 7, 10];
 let target = 10;

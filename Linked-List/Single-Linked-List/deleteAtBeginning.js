@@ -1,4 +1,4 @@
-class Node {
+class Node{
      constructor(data){
           this.data = data;
           this.next = null;
@@ -20,26 +20,26 @@ class SinglyLinkedList{
                current.next = newNode;
           }
      }
-     insertAtBeginning(data){
-          let newNode = new Node(data);
-          newNode.next = this.head;
-          this.head =newNode;
+     deleteAtBeginning(){
+          if (this.head === null){
+               console.log("List is empty!");
+               return;
+          }
+          console.log(`Deleting the value at the beginning ${this.head.data}`)
+          this.head = this.head.next;   
      }
      printList(){
           let current = this.head;
-          while(current!== null){
+          while (current !== null){
                console.log(current.data);
                current = current.next;
           }
-          
      }
-     
-     
 }
 let list = new SinglyLinkedList();
-let array = [10,20,30];
-for (let values of array){
-     list.append(values)
-}
-list.insertAtBeginning(5)
+list.append(10);
+list.append(20);
+list.append(30);
+list.printList();
+list.deleteAtBeginning();
 list.printList()

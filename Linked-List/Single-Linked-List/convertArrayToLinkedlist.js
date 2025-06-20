@@ -1,11 +1,11 @@
 class Node{
      constructor(data){
           this.data = data;
-          this.next =null;
+          this.next = null;
      }
 }
 class SinglyLinkedList{
-     constructor(){
+     constructor(head){
           this.head = null;
      }
      append(data){
@@ -14,25 +14,24 @@ class SinglyLinkedList{
                this.head = newNode;
           }else{
                let current = this.head;
-               while(current.next !== null){
+               while (current.next !== null){
                     current = current.next;
                }
                current.next = newNode;
           }
-          
      }
+
      printList(){
           let current = this.head;
-          while(current !== null){
+          while( current !== null){
                console.log(current.data);
                current = current.next;
           }
      }
 }
-
 let list = new SinglyLinkedList();
 let array = [10,20,30];
-for (let values of array){
-     list.append(values)
+for (let value of array){
+     list.append(value)
 }
 list.printList()
