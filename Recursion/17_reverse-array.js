@@ -1,5 +1,5 @@
 function reverseArray(start,end,arr){
-     if (start >= end) return;
+     if (start >= end) return arr;
 
      let temp = arr[start];
      arr[start] = arr[end];

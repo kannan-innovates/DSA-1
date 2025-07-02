@@ -3,4 +3,4 @@ function countDigits(n){
 
      return 1 + countDigits(Math.floor(n/10))
 }
-console.log(countDigits(1));
+console.log(countDigits(999));

@@ -3,4 +3,4 @@ function productOfDigits(n){
 
      return (n % 10) * productOfDigits(Math.floor(n/10))
 }
-console.log(productOfDigits(55)) // 5*5 = 25;git a
+console.log(productOfDigits(55)) // 5*5 = 25;
