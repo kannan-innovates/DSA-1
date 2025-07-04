@@ -23,13 +23,8 @@ class SinglyLinkedList{
      }
      insertAfterData(targetData,newData){
           let newNode = new Node (newData);
-          
-          if (this.head.data === targetData){
-               newNode.next = this.head;
-               this.head = newNode;
-               return;
-          }
           let current = this.head;
+          
           while (current !== null && current.data !== targetData){
                current = current.next;
           }
@@ -55,5 +50,5 @@ let sll = new SinglyLinkedList();
 sll.append(10);
 sll.append(20);
 sll.append(30);
-sll.insertAfterData(20,99);
+sll.insertAfterData(10,99);
 sll.printList()
