@@ -1,18 +1,13 @@
-function reverseString(start, end, arr) {
-    if (start >= end) return arr;
+function reverse(arr, left = 0, right = arr.length - 1) {
+    if (left >= right) return;
 
-  
-    let temp = arr[start];
-    arr[start] = arr[end];
-    arr[end] = temp;
+    [arr[left], arr[right]] = [arr[right], arr[left]];
 
-    return reverseString(start + 1, end - 1, arr);
+    return reverse(arr,left+1,right-1);
+
 }
-
 let str = "kannan";
-let arr = str.split(""); 
-
-reverseString(0, arr.length - 1, arr);
-
-let reversed = arr.join(""); 
-console.log(reversed); 
+let arr = str.split("");
+reverse(arr);
+let result = arr.join("");
+console.log(result)
