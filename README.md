@@ -20,6 +20,3 @@ This repository contains my **Data Structures & Algorithms (DSA)** practice for 
 
 7. **String**
 
----
-
-## Folder Structure
